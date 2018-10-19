@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Job Application</title>
+</head>
+<body>
+
+<h2>Job Application</h2>
+
+<form action="application.php" method="post">
+
+	<fieldset>
+		<legend>Account</legend>
+		<div class="field">
+			<label>Email:</label> 
+			<input type="text" name="email">
+		</div>
+		<div class="field">
+			<label>Password:</label> 
+			<input type="password" name="password">
+		</div>
+		<div class="field">
+			<label>Repeat password:</label> 
+			<input type="password" name="password_r">
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Personal Information</legend>
+		<div class="field">
+			<label>First Name:</label>
+		<input type="text" name="first_name">
+		</div>
+		<div class="field>
+			<label>LastName:</label>
+		<input type="text" name="last_name">
+		</div>
+		<div class="field">
+			<label>Full Name:</label> 
+			<input type="text" name="name">
+		</div>
+		<div class="field">
+			<label>Street Address:</label> 
+			<input type="text" name="street">
+		</div>
+		<div class="field">
+			<label>City:</label> 
+			<input type="text" name="city">
+		</div>
+		<div class="field">
+			<label>Gender:</label> 
+			<select name="gender">
+				<option value="" selected="true">Gender</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="transgender">Transgender</option>
+				<option value="other">Other</option>
+			</select>
+			<label>If other:</label> 
+			<input type="text" name="gender_other">
+		</div>
+		<div class="field">
+			<label>ZIP:</label> 
+			<input type="text" name="zip">
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Qualifications</legend>
+		<div class="field">
+			<label>Are you over the age of 18?</label>
+			<input type="radio" name="age_exception_Y" value="yes">Yes
+			<input type="radio" name="age_exception_N" value="no">No
+		</div>
+		<div class="field">
+			<label>What is your education background? (check all that apply)</label>
+			<ul>
+				<li><input type="checkbox" name="edu_hs" value="hs">High School</li>
+				<li><input type="checkbox" name="edu_trade_school" value="trade_school">Trade School</li>
+				<li><input type="checkbox" name="edu_associates" value="associates">Associates Degree</li>
+				<li><input type="checkbox" name="edu_bachelor" value="bachelor">Bachelor's Degree</li>
+				<li><input type="checkbox" name="edu_masters" value="masters">Master's Degree</li>
+				<li><input type="checkbox" name="edu_phd" value="phd">PHD Degree</li>
+				<li><input type="text" name="edu_other" value="other">Other"</li>
+			</ul>
+		</div>
+		<div class="field">
+			<label>Courses Taken</label>
+			<table>
+				<tr>
+					<td></td>
+					<th>MATH</th>
+					<th>CSE</th>
+					<th>INFO</th>
+					<th>Other</th>
+				</tr>
+				<tr>
+					<th>1</th>
+					<td><input type="text" name="math_1"></td>
+					<td><input type="text" name="cse_1"></td>
+					<td><input type="text" name="info_1"></td>
+					<td><input type="text" name="other_1"></td>
+				</tr>
+				<tr>
+					<th>2</th>
+					<td><input type="text" name="cse_2"></td>
+					<td><input type="text" name="cse_2"></td>
+					<td><input type="text" name="cse_2"></td>
+					<td><input type="text" name="cse_2"></td>
+				</tr>
+				<tr>
+					<th>3</th>
+					<td><input type="text" name="math_3"></td>
+					<td><input type="text" name="cse_3"></td>
+					<td><input type="text" name="info_3"></td>
+					<td><input type="text" name="other_3"></td>
+				</tr>
+				<tr>
+					<th>4</th>
+					<td><input type="text" name="math_4"></td>
+					<td><input type="text" name="cse_4"></td>
+					<td><input type="text" name="info_4"></td>
+					<td><input type="text" name="other_4"></td>
+				</tr>
+			</table>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Personal Statement</legend>
+		<div class="field">
+			<label>Why do you deserve this job?</label><br>
+			<textarea name="deserve" rows="6" cols="60"></textarea>
+		</div>
+		<div class="field">
+			<label>Describe a recent project:</label><br>
+			<textarea name="project" rows="6" cols="60"></textarea>
+		</div>
+		<div class="field">
+			<label>In 500 words or less, describe a moment when you've overcome an obstacle:</label><br>
+			<textarea name="obstacle" rows = "6" cols="80"></textarea>
+		</div>
+	</fieldset>
+
+	<input type="submit" value="Submit form">
+
+</form>
+</body>
+</html>
